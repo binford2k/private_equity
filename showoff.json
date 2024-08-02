@@ -1,0 +1,45 @@
+{
+  "name": "Private Equity companies only want one thing and it's...",
+  "sections": [
+    "Overview/title.md",
+    "Overview/intro.md",
+    "Overview/agenda.md",
+
+    "History/growth.md",
+    "History/people.md",
+    "History/powerball.md",
+    "History/office_hours.md",
+    "History/trusted_contributors.md",
+
+    "Acquisition/perforce.md",
+    "Acquisition/culture_shock.md",
+    "Acquisition/misunderstood.md",
+    "Acquisition/inclusion_v_exclusion.md",
+
+    "PrivateEquity/about.md",
+    "PrivateEquity/extract_value.md",
+    "PrivateEquity/flippers.md",
+    "PrivateEquity/sustainability.md",
+    "PrivateEquity/want_one_thing.md",
+
+    "Community/foundational_value.md",
+    "Community/indirect_revenue.md",
+    "Community/cost_center.md",
+    "Community/pe_value.md",
+
+    "Community/short_term_value.md",
+    "Community/community_insights.md",
+    "Community/marketing_sales.md",
+    "Community/product_feedback.md",
+    "Community/keep_doing.md",
+
+    "Personal/update.md",
+    "Personal/efficiency.md",
+    "PrivateEquity/want_one_thing.md",
+    "Personal/update_resume.md", /* succession plan, transfer ownership to community */
+
+    "Conclusion/summary.md",
+    "Conclusion/books.md"
+  ]
+}
+

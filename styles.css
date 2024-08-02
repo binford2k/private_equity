@@ -1,0 +1,138 @@
+.callout:before {
+  color: #ffad1a;
+}
+
+.callout.cheers,
+.callout.heart,
+.callout.lightbulb,
+.callout.meh,
+.callout.grin {
+  padding-left: 3.5em;
+}
+
+.callout.cheers:before {
+  content: "\f79f";
+}
+.callout.heart:before {
+  content: "\f004";
+}
+.callout.lightbulb:before {
+  content: "\f0eb";
+}
+.callout.meh:before {
+  content: "\f11a";
+}
+.callout.grin:before {
+  content: "\f58a";
+}
+
+a {
+  text-decoration: none;
+}
+
+.slide.currentSlide:after {
+  font-family: "Font Awesome 5 Brands";
+  content: "@binford2k: \f4f6  \f09b  \f198";
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+}
+.slide.currentSlide.nofooter:after {
+  content: none;
+}
+
+
+.slide.credit:before {
+  font-style: italic;
+  font-size: small;
+  content: "authored in puppetlabs.github.io/showoff";
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+.slide.credit {
+  background: no-repeat bottom 25px right 20px url("/image/_images/showoff-icon.png");
+}
+.slide.intro {
+  background: no-repeat bottom 25px right 20px url("/image/_images/old_man_yells_at_puppet.png");
+}
+
+/* Allow us to specify when we want code to wrap */
+.content pre.code_wrap:not(.highlight),
+.content pre.highlight code.code_wrap  {
+    white-space: pre-wrap; /* css-3 */S
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.content .float_left  {
+  float: left;
+  margin: 1em;
+}
+.content .float_right {
+  float: right;
+  margin: 1em;
+}
+
+.content.sidebar > ul {
+  margin-left: 250px;
+}
+
+.content.invert {
+  color: white;
+}
+
+.content.invert h1,
+.content.invert h2 {
+  font-weight: 900;
+  background-color: #ffad1a;
+  margin: -1px;
+  line-height: 2em;
+  border: none !important;
+}
+
+.callout.fixed {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 16em;
+  width: 85%;
+}
+
+@media print {
+   #preso, .slide {
+    overflow: hidden;
+  }
+
+   #preso, .slide:not(.cover) {
+    max-height: inherit !important;
+    height: 100% !important; /* because otherwise handout notes are cutoff by the inline height set on the slide */
+    overflow: hidden;
+  }
+  .slide .center:not(.cover),
+  #slides.supplemental .slide .center {
+    position: static;
+    /* for some reason, setting top to 50% is pushing the content too far down, no idea why */
+    top: inherit;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .slide.center.cover,
+  .slide.center.fullscreen {
+    height: 800px !important;
+  }
+  .slide .center.cover + .notes-section,
+  .slide .center.fullscreen + .notes-section {
+    position: relative;
+    top: 300px;
+  }
+  .slide .center.fullscreen + .notes-section {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
